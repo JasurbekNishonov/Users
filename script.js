@@ -1,12 +1,67 @@
-const array =[2,4,6,13,34,3,5,54,23,24,34,1,23,53,23]
-let box1=0;
-let box2=0;
-for(let i=0; i<array.length; i++){
-    if(array[i]%2==0){
-        box1+=array[i]
-    }else{
-        box2+=array[i]%2==1
-    }
+let userId=1;
+const array ={
+    1:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    2:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    3:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    4:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    5:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    6:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    7:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    8:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    9:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    10:{
+        user: userId++,
+        name: let=prompt("Message", `Name`,"Enter your name"),
+        age: let=+prompt("Message",`${Math.round(Math.random()*(20-50)+50)}`,"Enter your age"),
+    },
+    
 }
-console.log(`the overall value of Even: ${box1}`)
-console.log(`the number of Odd: ${box2}`)
+for (const key in array) {
+    console.log(`User Id: ${array[key].user}`)
+    if(array[key].name==0){
+        console.log(`User Name: Name`)
+    }else{
+        console.log(`User Name: ${array[key].name}`)
+    };
+    if(array[key].age==0){
+        console.log(`User Age: ${Math.round(Math.random()*(20-50)+50)}`)
+    }else{
+        console.log(`User Age: ${array[key].age}`)
+    } 
+}
